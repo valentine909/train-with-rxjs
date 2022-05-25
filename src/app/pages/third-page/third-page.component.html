@@ -1,0 +1,7 @@
+<h2 class="title">Countdown</h2>
+<p class="countdown">{{ countdown }}</p>
+<p class="message" *ngIf="countdown === 0">Liftoff!</p>
+<div class="container__btns">
+  <button #start class="btn__start">Start Mission</button>
+  <button #pause class="btn__pause">Pause</button>
+</div>

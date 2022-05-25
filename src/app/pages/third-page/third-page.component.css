@@ -1,0 +1,52 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.countdown {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.container__btns {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  color: white;
+  width: 100px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn__start {
+  background-color: green;
+}
+
+.btn__pause {
+  background-color: darkgoldenrod;
+}
+
+button:hover {
+  animation: pulse 0.5s forwards;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(241, 204, 7, 0.7);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 5px rgba(241, 204, 7, 0.7);
+  }
+  100% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 0 rgba(241, 204, 7, 0.7);
+  }
+}
