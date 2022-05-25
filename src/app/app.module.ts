@@ -8,6 +8,7 @@ import { SecondPageComponent } from './pages/second-page/second-page.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ThirdPageComponent } from './pages/third-page/third-page.component';
 import { FourthPageComponent } from './pages/fourth-page/fourth-page.component';
+import { FifthPageComponent } from './pages/fifth-page/fifth-page.component';
 
 const routes: Routes = [
   { path: 'first', component: MainPageComponent },
@@ -23,6 +24,10 @@ const routes: Routes = [
     path: 'fourth',
     component: FourthPageComponent,
   },
+  {
+    path: 'fifth',
+    component: FifthPageComponent,
+  },
 ];
 
 @NgModule({
@@ -32,6 +37,7 @@ const routes: Routes = [
     SecondPageComponent,
     ThirdPageComponent,
     FourthPageComponent,
+    FifthPageComponent,
   ],
   imports: [BrowserModule, HttpClientModule, RouterModule.forRoot(routes)],
   exports: [RouterModule],

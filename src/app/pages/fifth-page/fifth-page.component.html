@@ -1,0 +1,4 @@
+<h2>Get Repos of GitHub user</h2>
+<input #username type="text" placeholder="Enter a username">
+<p>{{ info }}</p>
+<div class="results" *ngFor="let repo of repos">{{ repo.name }}</div>
