@@ -1,0 +1,16 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+}
+
+.result {
+  font-size: 32px;
+  margin-top: 25px;
+}
