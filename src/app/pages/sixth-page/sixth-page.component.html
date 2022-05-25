@@ -1,0 +1,21 @@
+<h2>Mortgage Calculator</h2>
+<div class="row">
+  <label for="mortgage">Mortgage Amount ($)</label>
+  <input #loan type="number" name="mortgage" id="mortgage">
+</div>
+<div class="row">
+  <label for="interest">Interest Rate (%)</label>
+  <input #interest type="number" name="interest" id="interest">
+</div>
+<div class="row">
+  <label>Mortgage Length</label>
+  <div class="subrow">
+    <input #time type="radio" name="length" id="15yr" value="15">
+    <label for="15yr">15 yr</label>
+    <input #time type="radio" name="length" id="30yr" value="30">
+    <label for="30yr">30 yr</label>
+  </div>
+</div>
+<div class="results">Your expected monthly payment is: {{ payment | number : '1.2-2'}} $</div>
+
+
